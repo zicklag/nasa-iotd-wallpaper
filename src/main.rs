@@ -76,7 +76,7 @@ async fn update_wallpaper() -> anyhow::Result<()> {
         // Work around this issue with http: https://github.com/seanmonstar/reqwest/issues/992
         image_url.set_scheme("https").expect("Invalid scheme");
 
-        println!("Downlloading image: {}", image_url);
+        println!("Downloading image: {}", image_url);
 
         // Download the image
         let mut image_data = client
