@@ -90,7 +90,7 @@ async fn update_wallpaper() -> anyhow::Result<()> {
 
         let image_path = std::env::temp_dir().join("nasa-iotd.jpg");
 
-        println!("Writing file to disk");
+        println!("Writing file to disk: {:?}", image_path);
         // Create a temporary file to store the image in
         let mut tempfile = std::fs::OpenOptions::new()
             .create(true)
